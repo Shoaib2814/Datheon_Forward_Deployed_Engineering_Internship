@@ -1,22 +1,8 @@
-# Automated Data Extraction & Vector Embedding ETL Pipeline
+# Datheon Forward Deployed Engineering Internship - Task 1
 
-## Project Overview
-An automated ETL (Extract, Transform, Load) pipeline designed to ingest multi-format client documents, perform semantic chunking with metadata preservation (department, access tier, date), and persist vector embeddings into ChromaDB with cosine similarity indexing.
+## Automated Data Extraction & Embedding Pipeline
 
-## Features
-- **Multi-Format Ingestion:** Supports CSV and Markdown file processing.
-- **Semantic Chunking:** Context-aware text splitting preserving department, access tier, and date metadata.
-- **Vector Database (ChromaDB):** Persistent local vector store utilizing cosine similarity.
-- **Batch Ingestion Benchmarking:** Measures throughput performance and processing duration during ingestion batches.
-- **Metadata Filtering:** Retrieves precise documents based on metadata attributes (e.g., department-specific filtering).
+### Overview
+This project implements an automated vector ETL pipeline that ingests multi-format client documents (Markdown, CSV), performs semantic chunking with metadata preservation (department, access tier, date), and stores vector embeddings in **ChromaDB** using cosine similarity indexes with metadata filtering support.
 
-## Project Structure
-```text
-Datheon_Forward_Deployed_Engineering_Internship/
-├── data/
-│   ├── Finance_Report.csv
-│   └── Tech_Docs.md
-├── chroma_db/
-├── etl_pipeline.py
-├── requirements.txt
-└── README.md
+### Project Structure
